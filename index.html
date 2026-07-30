@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeAlpha Image Gallery</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+            Header
+    =========================== -->
+
+    <header>
+
+        <h1>📷 Image Gallery</h1>
+
+        <p>
+            Responsive Image Gallery using HTML, CSS & JavaScript
+        </p>
+
+    </header>
+
+
+    <!-- ==========================
+            Filter Buttons
+    =========================== -->
+
+    <section class="filters">
+
+        <button class="active" data-filter="all">
+            All
+        </button>
+
+        <button data-filter="nature">
+            Nature
+        </button>
+
+        <button data-filter="animals">
+            Animals
+        </button>
+
+        <button data-filter="city">
+            City
+        </button>
+
+        <button data-filter="cars">
+            Cars
+        </button>
+
+    </section>
+
+
+    <!-- ==========================
+            Search Box
+    =========================== -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search Images...">
+
+    </div>
+
+
+    <!-- ==========================
+            Gallery
+    =========================== -->
+
+    <section class="gallery">
+
+        <!-- Nature -->
+
+        <div class="image nature" data-title="Beautiful Forest">
+
+            <img src="images/nature1.jpg"
+                alt="Beautiful Forest"
+                loading="lazy">
+
+        </div>
+
+        <div class="image nature" data-title="Mountain Lake">
+
+            <img src="images/nature2.jpg"
+                alt="Mountain Lake"
+                loading="lazy">
+
+        </div>
+
+        <div class="image nature" data-title="Sunset Beach">
+
+            <img src="images/nature3.jpg"
+                alt="Sunset Beach"
+                loading="lazy">
+
+        </div>
+
+
+        <!-- Animals -->
+
+        <div class="image animals" data-title="Cute Dog">
+
+            <img src="images/animal1.jpg"
+                alt="Cute Dog"
+                loading="lazy">
+
+        </div>
+
+        <div class="image animals" data-title="Wild Tiger">
+
+            <img src="images/animal2.jpg"
+                alt="Wild Tiger"
+                loading="lazy">
+
+        </div>
+
+        <div class="image animals" data-title="Colorful Bird">
+
+            <img src="images/animal3.jpg"
+                alt="Colorful Bird"
+                loading="lazy">
+
+        </div>
+
+
+        <!-- City -->
+
+        <div class="image city" data-title="New York">
+
+            <img src="images/city1.jpg"
+                alt="New York"
+                loading="lazy">
+
+        </div>
+
+        <div class="image city" data-title="London Bridge">
+
+            <img src="images/city2.jpg"
+                alt="London Bridge"
+                loading="lazy">
+
+        </div>
+
+        <div class="image city" data-title="Dubai Skyline">
+
+            <img src="images/city3.jpg"
+                alt="Dubai Skyline"
+                loading="lazy">
+
+        </div>
+
+
+        <!-- Cars -->
+
+        <div class="image cars" data-title="BMW M4">
+
+            <img src="images/car1.jpg"
+                alt="BMW M4"
+                loading="lazy">
+
+        </div>
+
+        <div class="image cars" data-title="Lamborghini Huracan">
+
+            <img src="images/car2.jpg"
+                alt="Lamborghini Huracan"
+                loading="lazy">
+
+        </div>
+
+        <div class="image cars" data-title="Ferrari 488">
+
+            <img src="images/car3.jpg"
+                alt="Ferrari 488"
+                loading="lazy">
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+            Lightbox
+    =========================== -->
+
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-img">
+
+            <h2 id="title"></h2>
+
+            <p id="counter"></p>
+
+            <div class="actions">
+
+                <button id="download">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <button class="next">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
